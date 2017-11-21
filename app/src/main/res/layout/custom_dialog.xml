@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cadllMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roun_corner"
+    android:orientation="vertical"
+    tools:ignore="ButtonOrder" android:padding="5dp">
+
+
+    <toukir.best.com.livecricscore.utils.SportText
+        android:layout_margin="2dp"
+        android:layout_marginTop="5dp"
+        android:text="C"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <toukir.best.com.livecricscore.utils.JellyText
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="title_text" />
+
+    </FrameLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@android:color/white" />
+    <toukir.best.com.livecricscore.utils.JellyText
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="Message" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <toukir.best.com.livecricscore.utils.CustomText
+            android:textColor="#000"
+            android:gravity="center"
+            android:id="@+id/cadbtnOk"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:text="@android:string/ok" />
+        <toukir.best.com.livecricscore.utils.CustomText
+            android:textColor="#000"
+            android:gravity="center"
+            android:id="@+id/cadbtnShare"
+            android:textSize="15sp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="Share" />
+    </LinearLayout>
+</LinearLayout>
